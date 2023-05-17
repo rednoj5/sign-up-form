@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="javascript.js" defer></script>
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="photos/noun-house-1069541.svg" alt="Logo - House Icon"/>
+            <p>FreeItHome</p>
+            <p id="author">Photo by <a href="https://unsplash.com/@mattiabericchia" target="_blank" rel="noopener noreferrer">Mattia Bericchia</a> on <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+        </div>
+    </div>
+    <div class="right">
+        <div class="description">
+            <p>We will help you buy a house in Italy for as little as 1 euro*. Embark on your beautiful future in sunny Italy. All legitimate!</p>
+            <p>Do not hesitate!</p>
+        </div>
+        <form id='signup' action="" method="post">
+            <fieldset>
+                <div class="field">
+                    <label for="first-name">First Name *:</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="field">
+                    <label for="last-name">Last Name *:</label>
+                    <input type="text" id="last-name" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="field">
+                    <label for="email">Email *:</label>
+                    <input type="text" id="email" required>
+                </div>
+                <div class="field">
+                    <label for="phone">Phone Number :</label>
+                    <input type="tel" id="phone">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="field">
+                    <label for="pwd">Password *:</label>
+                    <input type="password" id="pwd" required>
+                </div>
+                <div class="field">
+                    <label for="pwdconf">Confirm Password *:</label>
+                    <input type="password" id="pwdconf" required>
+                </div>
+            </fieldset>
+        </form>
+        <div class="bottom">
+            <button class="button" type="submit" form="signup">Sign me up!</button>
+            <p>Already have an account? Log in then!</p>
+        </div>
+    </div>
+</body>
+</html>
