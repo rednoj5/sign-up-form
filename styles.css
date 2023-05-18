@@ -22,11 +22,11 @@ body {
 }
 
 .left {
-    width: clamp(400px, 40%, 600px);
+    width: 40%;
     height: 100%;
     background-image: url('photos/mattia-bericchia-4qnPrCUSw5E-unsplash.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .logo {
@@ -78,24 +78,31 @@ body {
     width: 70%;
     height: 100%;
     background: linear-gradient(#175283, #bcd9f1, #073006);
+    display: flex;
+    flex-flow: column;
 }
 
 form {
     display: flex;
     flex-flow: column;
-    background-color: aliceblue;
+    background-color: #175283;
     padding: 40px;
     box-shadow: 0 0 3px black;
     border-radius: 10px;
+    margin: 5px;
+    justify-self: center;
 }
 
 label {
     font-family: 'Raleway', 'Times New Roman', Times, serif;
+    color: #c7be43;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .field {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
 }
 
 form fieldset {
@@ -119,7 +126,7 @@ form fieldset {
 
 .button {
     font-family: 'Raleway', 'Times New Roman', Times, serif;
-    margin: 20px 70px;
+    margin: 20px 0 0 50px;
     padding: 20px;
     border-radius: 20px;
     border: 0;
@@ -131,10 +138,43 @@ form fieldset {
     cursor: pointer;
 }
 
+.button:active {
+    box-shadow: 0 2px #0d2f4b;
+    transform: translateY(2px);
+}
+
 .bottom p {
     font-family: 'Raleway', 'Times New Roman', Times, serif;
     padding: 20px 50px;
     color: aliceblue;
     font-weight: 500;
     font-size: 1rem;
+}
+
+.bottom p a {
+    color: #c7be43;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.required {
+    color: red;
+}
+
+form input {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+form input:required:valid {
+    box-shadow: 0 0 5px 3px rgb(6, 219, 6);
+    outline: 1px solid rgb(6, 219, 6);
+    border-color: rgb(6, 219, 6);
+}
+
+form input:focus {
+    box-shadow: 0 0 5px 3px #c7be43;
+    outline: 1px solid #c7be43;
 }

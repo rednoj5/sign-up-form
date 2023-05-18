@@ -18,44 +18,44 @@
     </div>
     <div class="right">
         <div class="description">
-            <p>We will help you buy a house in Italy for as little as 1 euro*. Embark on your beautiful future in sunny Italy. All legitimate!</p>
+            <p>We will help you buy a house in Italy for as little as 1€*. Embark on your beautiful future in sunny Italy. All legitimate!</p>
             <p>Do not hesitate!</p>
         </div>
         <form id='signup' action="" method="post">
             <fieldset>
                 <div class="field">
-                    <label for="first-name">First Name *:</label>
-                    <input type="text" id="first-name" required>
+                    <label for="first-name">First Name <span class="required" aria-label="required">*</span>:</label>
+                    <input type="text" id="first-name" pattern="[a-zA-Z]{3,20}" required>
                 </div>
                 <div class="field">
-                    <label for="last-name">Last Name *:</label>
-                    <input type="text" id="last-name" required>
+                    <label for="last-name">Last Name <span class="required" aria-label="required">*</span>:</label>
+                    <input type="text" id="last-name" pattern="[a-zA-Z]{3,20}" required>
                 </div>
             </fieldset>
             <fieldset>
                 <div class="field">
-                    <label for="email">Email *:</label>
-                    <input type="text" id="email" required>
+                    <label for="email">Email <span class="required" aria-label="required">*</span>:</label>
+                    <input type="email" id="email" required>
                 </div>
                 <div class="field">
                     <label for="phone">Phone Number :</label>
-                    <input type="tel" id="phone">
+                    <input type="tel" id="phone" minlength="7" maxlength="12">
                 </div>
             </fieldset>
             <fieldset>
                 <div class="field">
-                    <label for="pwd">Password *:</label>
-                    <input type="password" id="pwd" required>
+                    <label for="pwd">Password <span class="required" aria-label="required">*</span>:</label>
+                    <input type="password" id="pwd" minlength="8" maxlength="30" required>
                 </div>
                 <div class="field">
-                    <label for="pwdconf">Confirm Password *:</label>
-                    <input type="password" id="pwdconf" required>
+                    <label for="pwdconf">Confirm Password <span class="required" aria-label="required">*</span>:</label>
+                    <input type="password" id="pwdconf" minlength="8" maxlength="30" required>
                 </div>
             </fieldset>
         </form>
         <div class="bottom">
             <button class="button" type="submit" form="signup">Sign me up!</button>
-            <p>Already have an account? Log in then!</p>
+            <p>Already have an account? <a href="">Log in</a> then!</p>
         </div>
     </div>
 </body>
