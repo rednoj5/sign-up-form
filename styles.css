@@ -178,3 +178,17 @@ form input:focus {
     box-shadow: 0 0 5px 3px #c7be43;
     outline: 1px solid #c7be43;
 }
+
+.bottom {
+    position: relative;
+}
+
+#asterix {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0.65rem;
+    left: 50px;
+    color: black;
+}
